@@ -19,7 +19,7 @@ virtual report
 //  For context mode
 //----------------------------------------------------------
 
-@depends context && !(file in "third_party")@
+@depends on context && !(file in "third_party")@
 type T;
 T[] E;
 @@
@@ -35,7 +35,7 @@ T[] E;
 //  For patch mode
 //----------------------------------------------------------
 
-@depends patch && !(file in "third_party")@
+@depends on patch && !(file in "third_party")@
 type T;
 T[] E;
 @@
